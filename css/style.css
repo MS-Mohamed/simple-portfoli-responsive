@@ -1,0 +1,261 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.arrow{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #d35400;
+}
+
+#header{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid white;
+}
+
+nav > h2{
+    font-size: 25px;
+    font-weight: bolder;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav > h2> span{
+    color: #d35400;
+    font-size: 20px;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+}
+
+.home{
+    border-bottom: #8e44ad solid 2px;
+    color: #8e44ad;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    margin: 0px 30px;
+    font-weight: bolder;
+    color: #d35400;
+    padding: 5px;
+}
+
+nav > ul > li > a:hover{
+    border-bottom: #8e44ad solid 2px;
+    color: #8e44ad;
+}
+
+.d-w{
+    font-size: 30px;
+    color: #f39c12;
+}
+
+#dark{
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    cursor: pointer;
+}
+
+#white{
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.data > .txt{
+    position: relative;
+    line-height: 45px;
+    margin-top: 250px;
+    width: 400px;
+    animation-name: txt;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.1s;
+}
+
+.data > .txt > .p1{
+    font-weight: bold;
+    font-size: 15px;
+    color: #d35400;
+}
+
+.data > .txt > h2{
+    font-size: 35px;
+    color: #f39c12;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.data > .txt > h2 > span{
+    color: #d30139;
+}
+
+.data > .txt > .p2{
+    font-size: 15px;
+    color: #d35400;
+    font-weight: bold;
+}
+
+.data > .txt > a > button{
+    background-color: #d30139;
+    padding: 10px 20px;
+    border: 1px solid #d30139;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+
+.data > .txt > a > button:hover{
+    background-color: inherit;
+    color: #d30139;
+}
+
+.data > .txt > .icons > a > i{
+    font-size: 30px;
+    color: #eb2f06;
+    margin: 15px 5px;
+}
+
+.data > .txt > .icons > a > i:hover{
+    color: #d30139;
+}
+
+.data > img{
+    position: relative;
+    width: 700px;
+    margin-top: 45px;
+    animation-name: img;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.1s;
+}
+
+#bars{
+    font-size: 30px;
+    color: #d35400;
+    display: none;
+}
+
+#list-phone{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #123;
+    display: none;
+}
+
+#list-phone > i{
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#list-phone > ul{
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 40%;
+}
+
+#list-phone > ul > li{
+    margin-top: 30px;
+}
+
+#list-phone > ul > li > a{
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 30px;
+}
+
+#list-phone > ul > li > a:hover{
+    color: #8e44ad;
+    border-bottom: #8e44ad solid 3px;
+}
+
+
+
+
+@media (max-width: 700px) {
+    nav > ul{
+        display: none;
+    }
+
+    #bars{
+        display: block;
+        cursor: pointer;
+    }
+
+    .data > img{
+        right: 10px;
+    }
+
+    .data > .txt{
+        left: 30px;
+    }
+
+
+}
+
+@keyframes img{
+    from{
+        left: 510px;
+    }
+
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes txt{
+    from{
+        right: 400px;
+    }
+
+    to{
+        right: 0;
+    }
+}
